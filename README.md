@@ -6,8 +6,6 @@ This folder contains all details for reproducing our experimental results in our
 
 Reproducing the result of our project consists of the following steps: (Note that you may install the jupyter notebook and tensorflow 1.12 to run the semantic model-related calculations. To evaluate the top model, we suggest to use the Clion IDE under the Linux environment. Also, one has to install opencv 3.x or 4.x in advance.)
 
-![compare_figure_modified](./train_top_model/compare_figure_modified.png)
-
 ## 1. [Training the Top model](./train_top_model)
 
 ### 1.1. Prepare the training set
