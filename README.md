@@ -6,13 +6,15 @@ This folder contains all details for reproducing our experimental results in our
 
 Reproducing the result of our project consists of the following steps: (Note that you may install the jupyter notebook and tensorflow 1.12 to run the semantic model-related calculations. To evaluate the top model, we suggest to use the Clion IDE under the Linux environment. Also, one has to install opencv 3.x or 4.x in advance.)
 
+![compare_figure_modified](./train_top_model/compare_figure_modified.png)
+
 ## 1. [Training the Top model](./train_top_model)
 
 ### 1.1. Prepare the training set
 
 The training set consists of 3 parts: the one contains the [logits from the temporal model](./train_top_model/probabilities), the one contains the [logits from the semantic model](./train_top_model/logits) and the one contains the [groundtruths](./train_top_model/groundtruths). These datasets are prepared already in the folder [train_top_model](./train_top_model).
 
-![location of training set](./train_top_model/location of training set.png)
+![location of training set](./train_top_model/location_of_training_set.png)
 
 If one want to use [models](https://github.com/andrewssobral/bgslibrary) that only produce binary segmentations or one cannot get the source code but have their [binary results](http://jacarini.dinf.usherbrooke.ca/results2014) at hand, use the inversed binary segmentations as the estimation of the conditional background probability. In other word, you should replace images in [train_top_model/probabilities](./train_top_model/probabilities) by the inverse of corresponding binary results. However, if one want to use the histogram based model and reproduce our result, just go ahead.
 
@@ -20,7 +22,7 @@ If one want to use [models](https://github.com/andrewssobral/bgslibrary) that on
 
 Run the [notebook](./train_top_model/train_top_model.ipynb) to train the top model. During the training process, you can see how the parameters are changed. The trained model as well as the summaries are saved at [train_top_model/Logs](./train_top_model/Logs). Use tensorboard to check these summaries.
 
-![training process](./train_top_model/training process.png)
+![training process](./train_top_model/training_process.png)
 
 ![tensorboard](./train_top_model/tensorboard.png)
 
@@ -43,7 +45,8 @@ Logits of the semantic segmentation are saved at [this folder](./deeplab_demo_cd
 ### 2.2. Calculate all logits for the CDnet dataset
 
 Run the notebook at [calculate_ss_logits_for_cdnet](./calculate_ss_logits_for_cdnet/calculate_ss_logits_for_cdnet.ipynb) to get all logits. Remember to change the paths for the cdnet datset and that for the logits.
-![path for logits](./calculate_ss_logits_for_cdnet/path for logits.png)
+
+![path for logits](./calculate_ss_logits_for_cdnet/path_for_logits.png)
 
 ## 3. Evaluate the top model
 
@@ -65,25 +68,25 @@ To evaluate the AFH model only, semantic model only, and the top model built upo
 
 4). (optional) Setup folders to record all kinds of intermediate results. To do this, just copy, replicate, and rename the empty results folder under the root path of the downloaded CDnet2014 dataset.
 
-![cdnet results](./evaluate_AFH_SS/cdnet results.png)
+![cdnet results](./evaluate_AFH_SS/cdnet_results.png)
 
 ![AFH_SS_results](./evaluate_AFH_SS/AFH_SS_results.png)
 
 5). Open the [C++ project](./evaluate_AFH_SS/AFH_SS) and modifiy the paths in main.cpp according to your own settings. The first two paths must be set correctly!
 
-![change paths](./evaluate_AFH_SS/change paths.png)
+![change paths](./evaluate_AFH_SS/change_paths.png)
 
 6). (no need to change) Write the learned parameters in step 1.2 in BACKSUB.h. Since we have trained the top mode and set the parameters in advance, there is no need to change them. The first column are for other use and PLEASE DO NOT CHANGE THEM! If one want to use other parameters, just copy the trained parameters to the SECOND~LAST COLUMNS!
 
-![set parameters](./evaluate_AFH_SS/learned parameters.png)
+![set parameters](./evaluate_AFH_SS/learned_parameters.png)
 
 7). Set the path for opencv in CMakeLists.txt.
 
-![set opencv path](./evaluate_AFH_SS/set opencv path.png)
+![set opencv path](./evaluate_AFH_SS/set_opencv_path.png)
 
 Run the project and you will see all intermediate results. These results are also recorded in the corresponding folders.
 
-![intermediate results](./evaluate_AFH_SS/intermediate results.png)
+![intermediate results](./evaluate_AFH_SS/intermediate_results.png)
 
 We also provide a program to calculate the scores in a [jupyter notebook](./evaluate_AFH_SS/scores.ipynb). All score records are also given there.
 
@@ -101,21 +104,21 @@ This is our best scored model, which built upon the [SWCD method](https://www.sp
 
 5). (optional) Setup folders to record all kinds of intermediate results. To do this, just copy, replicate, and rename the empty results folder under the root path of the downloaded CDnet2014 dataset.
 
-![cdnet results](./evaluate_AFH_SS/cdnet results.png)
+![cdnet results](./evaluate_AFH_SS/cdnet_results.png)
 
 ![SWCD_results](./evaluate_SWCD_SS/SWCD_SS_results.png)
 
-6). Open the [C++ project](./evaluate_SWCD_SS/AFH_SS) and modifiy the paths in main.cpp according to your own settings. The first two paths must be set correctly!
+6). Open the [C++ project](./evaluate_SWCD_SS/SWCD_SS) and modifiy the paths in main.cpp according to your own settings. The first two paths must be set correctly!
 
-![change paths](./evaluate_SWCD_SS/change paths.png)
+![change paths](./evaluate_SWCD_SS/change_paths.png)
 
 7). (no need to change) Write the learned parameters in step 1.2 in BACKSUB.h. Since we have trained the top mode and set the parameters in advance, there is no need to change them. The first column are for other use and PLEASE DO NOT CHANGE THEM! If one want to use other parameters, just copy the trained parameters to the SECOND~LAST COLUMNS!
 
-![set parameters](./evaluate_SWCD_SS/set parameters.png)
+![set parameters](./evaluate_SWCD_SS/set_parameters.png)
 
 8). Set the path for opencv in CMakeLists.txt.
 
-![set opencv path](./evaluate_SWCD_SS/set opencv path.png)
+![set opencv path](./evaluate_SWCD_SS/set_opencv_path.png)
 
 Run the project and you will see binary results. These results are also recorded in the corresponding folders. We also provide a program to calculate the scores in a [jupyter notebook](./evaluate_SWCD_SS/scores.ipynb). All score records as well as per category scores are also given there.
 
