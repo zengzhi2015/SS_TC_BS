@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="AFH_SS"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\Downloads\;CMake Files\..\..\..\..\..\Downloads\opencv4\;CMake Files\..\..\..\..\..\Downloads\opencv4\installation\;CMake Files\..\..\..\..\..\Downloads\opencv4\installation\OpenCV-master\;CMake Files\..\..\..\..\..\Downloads\opencv4\installation\OpenCV-master\lib\;CMake Files\..\..\..\..\..\Downloads\opencv4\installation\OpenCV-master\lib\cmake\;CMake Files\..\..\..\..\..\Downloads\opencv4\installation\OpenCV-master\lib\cmake\opencv4\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/paperspace/Documents/AFH_SS_project/Open Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/paperspace/Documents/AFH_SS_project/Open\ Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/paperspace/Documents/AFH_SS_project/Open\ Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/paperspace/Documents/AFH_SS_project/Open\ Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/paperspace/Documents/AFH_SS_project/Open\ Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/paperspace/Documents/AFH_SS_project/Open Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/paperspace/Documents/AFH_SS_project/Open\ Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/paperspace/Documents/AFH_SS_project/Open\ Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/paperspace/Documents/AFH_SS_project/Open\ Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/paperspace/Documents/AFH_SS_project/Open\ Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AFH_SS">
+				<Option output="/home/paperspace/Documents/AFH_SS_project/Open Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/AFH_SS" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/paperspace/Documents/AFH_SS_project/Open Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/paperspace/Downloads/opencv4/installation/OpenCV-master/include/opencv4"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/paperspace/Documents/AFH_SS_project/Open\ Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/Makefile&quot;  VERBOSE=1 AFH_SS"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/paperspace/Documents/AFH_SS_project/Open\ Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/paperspace/Documents/AFH_SS_project/Open\ Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/paperspace/Documents/AFH_SS_project/Open\ Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AFH_SS/fast">
+				<Option output="/home/paperspace/Documents/AFH_SS_project/Open Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/AFH_SS" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/paperspace/Documents/AFH_SS_project/Open Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/paperspace/Downloads/opencv4/installation/OpenCV-master/include/opencv4"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/paperspace/Documents/AFH_SS_project/Open\ Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/Makefile&quot;  VERBOSE=1 AFH_SS/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/paperspace/Documents/AFH_SS_project/Open\ Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/paperspace/Documents/AFH_SS_project/Open\ Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/paperspace/Documents/AFH_SS_project/Open\ Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/paperspace/Documents/AFH_SS_project/Open Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/paperspace/Documents/AFH_SS_project/Open\ Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/paperspace/Documents/AFH_SS_project/Open\ Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/paperspace/Documents/AFH_SS_project/Open\ Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/paperspace/Documents/AFH_SS_project/Open\ Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/paperspace/Documents/AFH_SS_project/Open Source/evaluate_SWCD_SS/SWCD_SS/BACKSUB.cpp">
+			<Option target="AFH_SS"/>
+		</Unit>
+		<Unit filename="/home/paperspace/Documents/AFH_SS_project/Open Source/evaluate_SWCD_SS/SWCD_SS/BACKSUB.h">
+			<Option target="AFH_SS"/>
+		</Unit>
+		<Unit filename="/home/paperspace/Documents/AFH_SS_project/Open Source/evaluate_SWCD_SS/SWCD_SS/Functions.cpp">
+			<Option target="AFH_SS"/>
+		</Unit>
+		<Unit filename="/home/paperspace/Documents/AFH_SS_project/Open Source/evaluate_SWCD_SS/SWCD_SS/Functions.h">
+			<Option target="AFH_SS"/>
+		</Unit>
+		<Unit filename="/home/paperspace/Documents/AFH_SS_project/Open Source/evaluate_SWCD_SS/SWCD_SS/main.cpp">
+			<Option target="AFH_SS"/>
+		</Unit>
+		<Unit filename="/home/paperspace/Documents/AFH_SS_project/Open Source/evaluate_SWCD_SS/SWCD_SS/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/paperspace/Documents/AFH_SS_project/Open Source/evaluate_SWCD_SS/SWCD_SS/../../../../../Downloads/opencv4/installation/OpenCV-master/lib/cmake/opencv4/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Downloads\opencv4\installation\OpenCV-master\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/paperspace/Documents/AFH_SS_project/Open Source/evaluate_SWCD_SS/SWCD_SS/../../../../../Downloads/opencv4/installation/OpenCV-master/lib/cmake/opencv4/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Downloads\opencv4\installation\OpenCV-master\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/paperspace/Documents/AFH_SS_project/Open Source/evaluate_SWCD_SS/SWCD_SS/../../../../../Downloads/opencv4/installation/OpenCV-master/lib/cmake/opencv4/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Downloads\opencv4\installation\OpenCV-master\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/paperspace/Documents/AFH_SS_project/Open Source/evaluate_SWCD_SS/SWCD_SS/../../../../../Downloads/opencv4/installation/OpenCV-master/lib/cmake/opencv4/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Downloads\opencv4\installation\OpenCV-master\lib\cmake\opencv4\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

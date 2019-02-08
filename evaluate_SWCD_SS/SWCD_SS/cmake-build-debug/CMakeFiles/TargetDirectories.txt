@@ -1,0 +1,3 @@
+/home/paperspace/Documents/AFH_SS_project/Open Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/paperspace/Documents/AFH_SS_project/Open Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/CMakeFiles/AFH_SS.dir
+/home/paperspace/Documents/AFH_SS_project/Open Source/evaluate_SWCD_SS/SWCD_SS/cmake-build-debug/CMakeFiles/edit_cache.dir
