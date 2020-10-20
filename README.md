@@ -1,8 +1,6 @@
-# A universal framework for fusing temporal consistency and semantic information for background segmentation
+# Probability-based Framework to Fuse Temporal Consistency and Semantic Information for Background Segmentation
 
-*-by Zhi Zeng, Liuyin Wang, Fulei Ma, Zheng Li, and Mengqi Xie*
-
-This folder contains all details for reproducing our experimental results in our paper. More details regarding our work will be added when the paper is accepted.
+This is a legacy version used to reproduce part of the experiment in the work. Other codes of this work are temporarily privatized. These codes and other experimental results will be published along with the article.
 
 Reproducing the result of our project consists of the following steps: (Note that you may install the jupyter notebook and tensorflow 1.12 to run the semantic model-related calculations. To evaluate the top model, we suggest to use the Clion IDE under the Linux environment. Also, one has to install opencv 3.x or 4.x in advance.)
 
