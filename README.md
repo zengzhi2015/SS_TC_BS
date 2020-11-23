@@ -1,8 +1,10 @@
 # Probability-based Framework to Fuse Temporal Consistency and Semantic Information for Background Segmentation
 
-This is a legacy version used to reproduce part of the experiment in the work. Other codes of this work are temporarily privatized. These codes and other experimental results will be published along with the article.
+The following code is used to reproduce the experimental results in the article. 
 
-Reproducing the result of our project consists of the following steps: (Note that you may install the jupyter notebook and tensorflow 1.12 to run the semantic model-related calculations. To evaluate the top model, we suggest to use the Clion IDE under the Linux environment. Also, one has to install opencv 3.x or 4.x in advance.)
+## Part1: Reproducing the results in Table I
+
+Reproducing the results in Table I consists of the following steps: (Note that you may install the jupyter notebook and tensorflow 1.12 to run the semantic model-related calculations. To evaluate the top model, we suggest to use the Clion IDE under the Linux environment. Also, one has to install opencv 3.x or 4.x in advance.)
 
 ## 1. [Training the Top model](./train_top_model)
 
@@ -119,3 +121,8 @@ This is our best scored model, which built upon the [SWCD method](https://www.sp
 Run the project and you will see binary results. These results are also recorded in the corresponding folders. We also provide a program to calculate the scores in a [jupyter notebook](./evaluate_SWCD_SS/scores.ipynb). All score records as well as per category scores are also given there.
 
 ![per_cate_scores](./evaluate_SWCD_SS/per_cate_scores.png)
+
+## Part2: Reproducing the results in Table II
+
+The first row in Table II records the current best score of the proposed method using the end-to-end framework. All network weights are given to reproduce the results in Table II. A list of the packages in the conda environments are given as follows. Please follow the instructions on the jupyter notebooks to run the proposed model and reproduce our current best score.
+
