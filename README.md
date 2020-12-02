@@ -2,9 +2,9 @@
 
 The following code is used to reproduce the experimental results in the article. 
 
-## Part1: Reproducing the results in Table I
+## Part1: Reproducing the results
 
-Reproducing the results in Table I consists of the following steps: (Note that you may install the jupyter notebook and tensorflow 1.12 to run the semantic model-related calculations. To evaluate the top model, we suggest to use the Clion IDE under the Linux environment. Also, one has to install opencv 3.x or 4.x in advance.)
+Reproducing the results in the paper consists of the following steps: (Note that you may install the jupyter notebook and tensorflow 1.12 to run the semantic model-related calculations. To evaluate the top model, we suggest to use the Clion IDE under the Linux environment. Also, one has to install opencv 3.x or 4.x in advance.)
 
 ## 1. [Training the Top model](./train_top_model)
 
@@ -54,7 +54,7 @@ As told in Section 2, since the logits are calculated in advance, we are only re
 
 Before running our code, one has to download the entire [CDnet2014 datset](http://jacarini.dinf.usherbrooke.ca/dataset2014) and extract them somewhere.
 
-### 3.1. Evaluate AFH, SS, and AFH+SSA
+### 3.1. Evaluate AFH, SS, and AFH+SSA (Reproducing the results in Figure5, Figure6)
 
 To evaluate the AFH model only, semantic model only, and the top model built upon the [AFH model](https://ieeexplore.ieee.org/document/7468482) and the [fine-tuned DeepLab V3+](./Models/frozen_inference_graph.pd), MAKE SURE the following preparations are done:
 
@@ -88,7 +88,7 @@ Run the project and you will see all intermediate results. These results are als
 
 We also provide a program to calculate the scores in a [jupyter notebook](./evaluate_AFH_SS/scores.ipynb). All score records are also given there.
 
-### 3.2. Evaluate SWCD+SSA
+### 3.2. Evaluate SWCD+SSA (Reproducing the results in Table I, Table II, Figure7)
 
 This is our best scored model, which built upon the [SWCD method](https://www.spiedigitallibrary.org/journals/Journal-of-Electronic-Imaging/volume-27/issue-2/023002/SWCD--a-sliding-window-and-self-regulated-learning-based/10.1117/1.JEI.27.2.023002.short?SSO=1) and the [fine-tuned DeepLab V3+](./Models/frozen_inference_graph.pd). Before running our code, MAKE SURE the following preparations are done:
 
@@ -122,7 +122,9 @@ Run the project and you will see binary results. These results are also recorded
 
 ![per_cate_scores](./evaluate_SWCD_SS/per_cate_scores.png)
 
-## Part2: Reproducing the results in Table II
+## Part2: Demo for Deep Neural Network
 
-The first row in Table II records the current best score of the proposed method using the end-to-end framework. All network weights are given to reproduce the results in Table II. A list of the packages in the conda environments are given as follows. Please follow the instructions on the jupyter notebooks to run the proposed model and reproduce our current best score.
+This demo illustrate how to build the neural network in Figure3 and how to use the neural network for inference. We train the three parts seperately for the reason of  efficiency. Neverthless, one can always train the whole model end-to-end using much more resources. A few details will be added after the publishment of the research.
+
+
 
